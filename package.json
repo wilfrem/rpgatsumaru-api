@@ -1,6 +1,6 @@
 {
   "name": "rpgatsumaru-api",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "wrapper and docs for rpgatsumaru api",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
