@@ -4,6 +4,7 @@
   "description": "wrapper and docs for rpgatsumaru api",
   "main": "dist/index.js",
   "scripts": {
+    "build": "tsc -p . && cp src/rpgatsumaru.d.ts dist/rpgatsumaru.d.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

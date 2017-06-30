@@ -34,7 +34,7 @@ declare namespace RPGAtsumaru {
         /**
          * get all save entries for this game.
          */
-        getItems(): PromiseLike<StorageItem>;
+        getItems(): PromiseLike<StorageItem[]>;
         /**
          * set save entries.
          */
@@ -45,12 +45,12 @@ declare namespace RPGAtsumaru {
         removeItem(key: string): PromiseLike<void>;
     }
     /**
-     * キーイベント情報
+     * input event data
      */
     export interface InputInfo {
         type: "keydown" | "keyup";
         /**
-         * 押されたキーの情報
+         * pressed key
          */
         key: string;
     }
@@ -115,5 +115,5 @@ declare namespace RPGAtsumaru {
 }
 
 interface Window {
-    RPGAtsumaru?: RPGAtsumaru.RPGAtsumaru;
+    RPGAtsumaru: RPGAtsumaru.RPGAtsumaru;
 }
