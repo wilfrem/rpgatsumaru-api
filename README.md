@@ -1,2 +1,4 @@
 # rpgatsumaru-api
-アツマールのAPIを叩くためのライブラリやdocsやd.ts
+
+js library for RPG Atsumaru API.
+
