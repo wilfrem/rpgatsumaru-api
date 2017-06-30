@@ -1,0 +1,21 @@
+{
+  "name": "rpgatsumaru-api",
+  "version": "1.0.0",
+  "description": "wrapper and docs for rpgatsumaru api",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.o-in.dwango.co.jp:Kazuki-Yasufuku/rpgatsumaru-api.git"
+  },
+  "keywords": [
+    "RPGAtsumaru"
+  ],
+  "author": "DWANGO, co., ltd.",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^2.4.1"
+  }
+}
