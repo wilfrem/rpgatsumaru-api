@@ -1,0 +1,20 @@
+{
+  "name": "just-debug",
+  "version": "0.1.0",
+  "description": "debug rpgatsumaru-api",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js --progress --profile --colors && zip just-debug.zip bundle.js index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "rpgatsumaru-api": "^1.0.2"
+  },
+  "devDependencies": {
+    "ts-loader": "^2.2.1",
+    "typescript": "^2.4.1",
+    "webpack": "^3.0.0"
+  }
+}
