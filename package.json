@@ -1,8 +1,9 @@
 {
   "name": "rpgatsumaru-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "wrapper and docs for rpgatsumaru api",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc -p . && cp src/rpgatsumaru.d.ts dist/rpgatsumaru.d.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,6 +14,10 @@
   },
   "keywords": [
     "RPGAtsumaru"
+  ],
+  "files": [
+    "dist",
+    "rpgatsumaru.d.ts"
   ],
   "author": "DWANGO, co., ltd.",
   "license": "ISC",

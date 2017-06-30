@@ -1,4 +1,4 @@
-/// <reference path="./rpgatsumaru.d.ts" />
+/// <reference path="../rpgatsumaru.d.ts" />
 import { isRPGAtsumaru } from "./constants";
 
 /**
