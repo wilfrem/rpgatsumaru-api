@@ -44,4 +44,28 @@ export class CommentSystem {
             return window.RPGAtsumaru.comment.setContext(context);
         }
     }
+    /**
+     * observable about comments came out event.
+     */
+    get cameOut(): RPGAtsumaru.IObservable<RPGAtsumaru.CommentItem[]> {
+        if (isRPGAtsumaru) {
+            return window.RPGAtsumaru.comment.cameOut;
+        } else {
+            return {
+                subscribe: () => ({ unsubscribe: () => { }, closed: true })
+            };
+        }
+    }
+    /**
+     * observable about comment posted event.
+     */
+    get posted(): RPGAtsumaru.IObservable<RPGAtsumaru.CommentItem> {
+        if (isRPGAtsumaru) {
+            return window.RPGAtsumaru.comment.posted;
+        } else {
+            return {
+                subscribe: () => ({ unsubscribe: () => { }, closed: true })
+            };
+        }
+    }
 }

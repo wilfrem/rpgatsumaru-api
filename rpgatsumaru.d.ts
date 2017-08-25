@@ -56,6 +56,10 @@ declare namespace RPGAtsumaru {
     }
     export interface Controller extends IObservable<InputInfo> {
     }
+    export interface CommentItem {
+        command: string;
+        comment: string;
+    }
     /**
      * comment system API
      */
@@ -80,6 +84,14 @@ declare namespace RPGAtsumaru {
          * set context value.
          */
         setContext(context: string): void;
+        /**
+         * observable about comment came out(display)
+         */
+        readonly cameOut: IObservable<CommentItem[]>;
+        /**
+         * observable about comment posted.
+         */
+        readonly posted: IObservable<CommentItem>;
     }
     /**
      * volume API
